@@ -1,0 +1,167 @@
+body {background:#000040; font-family: 'Open Sans', sans-serif;}
+
+h1.titulo {text-align: center; font-size :60px; }
+h1{ color : white ; }
+
+*{
+	padding: 0px;
+	margin: 0px; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ .back {
+ 	background: #B0AFAF
+ }
+.back1
+ {
+ 	background: #B0AFAF
+ }
+
+
+.navegacion
+{
+	width: 1000px;
+ margin: 30px auto;
+ background: #FF4B16;
+ font-size: 30px;
+
+}
+
+.navegacion ul
+{
+	list-style: none;
+}
+
+.menu > li {
+	
+	display: inline-block;
+}
+
+.menu > li > a
+{
+	display: block;
+	padding: 15px 20px ;
+	color : #FFFFFF;
+	font-family: 'Open Sans';
+	text-decoration: none;
+}
+.menu li a:hover{
+	color: #000000 ;
+	transition: all .3s;
+
+} 
+
+.submenu{
+
+	position: absolute;
+	background: #333333;
+	width: 	120%;
+	display:none;	
+}
+.submenu li a
+{
+	display: block;
+	padding: 15px  ;
+	color : #FFF;
+	font-family: 'Open Sans';
+	text-decoration: none;
+
+}
+
+.menu li:hover .submenu
+{
+ display:block;
+}
+
+
+
+.galeria {
+  height: calc( var(--h) + 3em);
+  width: var(--w);
+  margin:1em auto;
+  border: 1px solid #555;
+  position: relative;  
+}
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-1 * var(--h) - 1.5em);
+  left: .5em;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+  opacity: 1;
+}
+
+.desc{
+	display: block;
+	padding: 15px 20px ;
+	color : #FFFFFF;
+	font-family: 'Open Sans';
+	text-decoration: none;
+	font-size: 30px
+
+
+}
+
+
+		h2.desc2{
+			text-align: center; font-size :20px;
+			color : #FFFFFF;
+		}	 	
+
+
+		h2.rosa{
+			text-align: center; font-size :20px;
+			color: #ff0080; 
+		}
+
+		p.tam{
+	display: block;
+	padding: 15px 20px ;
+	color : #FFFFFF;
+	font-family: 'Arial';
+	text-decoration: none;
+	font-size: 20px
+
+		}
+
+		#contact .card:hover i,#contact .card:hover h4{
+	color: #87d37c;
+}
+.picbig{
+	position:absolute;
+	width: 0px;
+	-webkit-transition::width 0.3s linear 0s;
+	z-index: 10px;
+}
+
+.pic:hover + .picbig
+{
+	width: 700px;
+}
